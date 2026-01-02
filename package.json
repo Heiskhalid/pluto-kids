@@ -1,0 +1,46 @@
+{
+	"name": "nike",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"prettier --write",
+			"eslint --fix"
+		]
+	},
+	"dependencies": {
+		"@heroicons/react": "^2.2.0",
+		"formik": "^2.4.9",
+		"next-themes": "^0.4.6",
+		"notistack": "^3.0.2",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3",
+		"react-router": "^7.11.0",
+		"react-spring": "^10.0.3"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.1.18",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.2",
+		"autoprefixer": "^10.4.23",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-refresh": "^0.4.26",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7",
+		"prettier": "^3.7.4",
+		"tailwindcss": "^4.1.18",
+		"vite": "^7.3.0"
+	}
+}
